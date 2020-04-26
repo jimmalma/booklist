@@ -1,0 +1,67 @@
+body {
+  background-image: url("book-background-1.jpg");
+  background-color: rgba(42, 34, 71, 0.7);
+  color: white;
+  background-blend-mode: overlay;
+}
+
+.t-shadow {
+  text-shadow: 0px 2px 7px rgb(174, 169, 236);
+}
+
+.box-color {
+  background: rgb(110, 69, 106);
+  background: linear-gradient(
+    356deg,
+    rgb(69, 52, 92) 17%,
+    rgb(107, 90, 119) 58%,
+    rgb(36, 31, 44) 89%
+  );
+}
+
+input:focus {
+  outline-color: black;
+}
+
+#booklist {
+  margin-top: 100px;
+}
+
+.book {
+  background-color: #4d3a69;
+  margin-bottom: 50px;
+  filter: brightness(0.7);
+}
+
+.book:hover {
+  filter: brightness(1);
+}
+
+.link {
+  color: black;
+}
+a:hover {
+  color: gray;
+}
+
+.del {
+  display: inline-block;
+  color: rgb(62, 35, 83);
+  font-size: 20px;
+  padding: 0 3px 0 3px;
+  margin: auto 0;
+}
+
+.del:hover {
+  color: white;
+  transition: linear 0.5s;
+}
+
+ul {
+  list-style: square;
+}
+
+li {
+  margin: auto 0;
+  padding: 12px;
+}
