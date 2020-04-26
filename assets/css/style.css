@@ -13,11 +13,10 @@ body {
   background: rgb(110, 69, 106);
   background: linear-gradient(
     356deg,
-    rgb(69, 52, 92) 17%,
-    rgb(107, 90, 119) 58%,
-    rgb(36, 31, 44) 89%
+    rgba(69, 52, 92, 0.7) 17%,
+    rgba(107, 90, 119, 0.7) 58%,
+    rgba(36, 31, 44, 0.7) 89%
   );
-  filter: opacity(0.8);
 }
 
 input:focus {
