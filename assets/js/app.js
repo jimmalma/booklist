@@ -14,12 +14,17 @@ function submitBookInfo(e) {
   let author = document.getElementById("author").value;
   let url = document.getElementById("url").value;
 
-  if (!isValidInput(title, author, url)) {
-    alert("Please input the book info again ");
+  if (!isValidInput(title, author)) {
+    alert("The title or Author should not be empty.");
     e.preventDefault();
     return false;
   }
 
+  if (!isValidUrl(url)) {
+    alert("Please enter a valid url *including https://*");
+    e.preventDefault();
+    return false;
+  }
   books.push({ title: title, author: author, url: url });
   storeBookList(books);
 }
@@ -36,10 +41,8 @@ function getBookList() {
 }
 
 //verify the input
-function isValidInput(title, author, url) {
+function isValidInput(title, author) {
   if (!title || !author) {
-    return false;
-  } else if (!isValidUrl(url)) {
     return false;
   } else {
     return true;
