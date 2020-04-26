@@ -84,7 +84,7 @@ function reloadBookList() {
     document.getElementById("books").innerHTML += `
      <ul class="book w-75 rounded mx-auto" ${aos}>
       
-       <li>Title: ${title} <i class="del float-right far fa-trash-alt"></i></li>
+       <li>Title: ${title} <i class="del float-right fas fa-trash-alt"></i></li>
        <li>Author: ${author}</li>
        <li>Url: <a href="${url}" target="_blank" class="link">${url}</a></li>
      </ul>
