@@ -17,6 +17,7 @@ body {
     rgb(107, 90, 119) 58%,
     rgb(36, 31, 44) 89%
   );
+  filter: opacity(0.8);
 }
 
 input:focus {
@@ -28,13 +29,13 @@ input:focus {
 }
 
 .book {
-  background-color: #4d3a69;
+  background-color: rgba(77, 58, 105);
   margin-bottom: 50px;
-  filter: brightness(0.7);
+  filter: brightness(0.7) opacity(0.8);
 }
 
 .book:hover {
-  filter: brightness(1);
+  filter: brightness(1) opacity(0.9);
 }
 
 .link {
